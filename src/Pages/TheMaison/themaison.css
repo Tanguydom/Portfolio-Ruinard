@@ -1,0 +1,165 @@
+ /* Reset all elements' margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background section with centered content */
+.background-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+/* Centered content for background section */
+.centered-content {
+    text-align: center;
+    max-width: 750px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    transform: translateY(-20px); /* Déplace vers le haut de 20px */
+}
+
+.centered-content2 {
+    text-align: center;
+    padding: 100px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+}
+
+.centered-title {
+    font-family: "Saol Standard - Regular", arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.centered-subtitle {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.centered-subtitle2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Content container for text and image side by side */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw; /* Prend toute la largeur de la fenêtre */
+    max-width: 100%; /* Évite les débordements */
+    gap: 0;
+    overflow: hidden;
+}
+
+/* Text section styling */
+.text-section {
+    font-family: "RevieraNights - Regular", arial, sans-serif;
+    width: 45%; /* Fixe la largeur à 50% */
+    padding: 40px;
+    color: #282823;
+    text-align: center;
+}
+
+/* Title and subtitle styles */
+.pretitle {
+    font-family: "Saol Standard - Regular", arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #282823;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #585852;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Divider line */
+.divider {
+    width: 50px;
+    height: 1px;
+    background-color: #282823;
+    border: none;
+    margin: 20px auto;
+}
+
+/* Paragraph styling */
+.content-paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center; /* Centre le texte */
+    margin-left: 150px;
+    margin-right: 150px;
+    max-width: 800px; /* Ajoute une largeur maximale pour contrôler la mise en page */
+}
+
+/* Image section styling */
+.image-section {
+    width: 50%; /* Fixe explicitement à 50% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Empêche les débordements */
+}
+
+.image-section2 {
+    width: 100%; /* Fixe explicitement à 50% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Empêche les débordements */
+}
+
+.photo-tile-image {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover; /* Assure que l'image couvre toute la section */
+    transition: transform 0.5s ease-in-out; /* Transition pour l'effet fluide */
+}
+
+.photo-tile-image:hover {
+    transform: scale(1.1); /* Zoom sur l'image */
+}
+
+ /* Responsive design for small screens */
+ @media screen and (max-width: 1000px) {
+     /* Passe les sections en colonne */
+    .content-container {
+        flex-direction: column; /* Change en colonne */
+    }
+
+    .image-section {
+        width: 100%; /* Prend toute la largeur */
+        order: 1; /* L'image est toujours au-dessus */
+    }
+
+    .text-section {
+        width: 100%; /* Prend toute la largeur */
+        order: 2; /* Le texte est en-dessous */
+        padding: 20px; /* Réduit le padding */
+    }
+
+    .content-paragraph {
+        margin: 0 20px; /* Réduit les marges horizontales */
+    }
+ }

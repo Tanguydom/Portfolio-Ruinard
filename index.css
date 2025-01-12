@@ -1,0 +1,201 @@
+.nav-link {
+  text-decoration: none;
+  font-family: 'Riviera Nights', Arial, sans-serif; /* "Riviera Nights - Medium" is part of Riviera Nights */
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: white !important;
+  transition: color 0.3s;
+}
+
+.navbar {
+  position: absolute; /* Fixe la navbar à une position absolue dans la fenêtre */
+  z-index: 100;
+  top: 0; /* Aligne en haut */
+  left: 0; /* Aligne à gauche */
+  width: 100%; /* S'étend sur toute la largeur */
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  gap: 5px
+}
+
+/* Navbar hover effect */
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar:hover .nav-link {
+  color: black !important;
+}
+
+/* Navbar header: contains the hamburger and the logo */
+.navbar-header {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.navbar-logo-center {
+  flex-grow: 1; /* S'assure que le logo occupe tout l'espace disponible */
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__logo {
+  margin-top: 9px;
+  max-width: 150px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Force le logo en blanc */
+}
+
+.navbar:hover .navbar__logo {
+  filter: none;
+}
+
+.hamburger {
+  display: none; /* Caché par défaut */
+  position: absolute; /* Positionné indépendamment */
+  left: 15px; /* Positionné à gauche avec un espacement confortable */
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 30px;
+  height: auto;
+}
+
+.navbar-menu-container {
+  list-style: none;
+  padding: 0;
+  margin: 17px;
+  display: flex;
+  gap: 63px; /* Espacement horizontal entre les éléments */
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: #ffffff; 
+}
+
+/* Responsive styles */
+@media screen and (max-width: 800px) {
+  /* Hamburger button visible */
+  .hamburger {
+    display: block; /* Bouton visible */
+  }
+
+  /* Hide menu by default */
+  .navbar-menu-container {
+    display: none; /* Caché par défaut */
+    flex-direction: column; /* Menu vertical */
+    position: absolute;
+    top: 55px; /* Juste en dessous de la navbar */
+    left: -20px;
+    background-color: rgba(255, 255, 255, 1); /* Fond blanc */
+    width: 100%; /* Largeur complète */
+    padding: 10px 0;
+    z-index: 9; /* Par-dessus les autres éléments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Display menu when open */
+  .navbar-menu-container.open {
+    display: flex; /* Menu visible */
+  }
+
+  /* Navigation items */
+  .nav-item {
+    margin: 10px 0; /* Espacement vertical */
+    text-align: center;
+  }
+
+  .nav-link {
+    color: black !important; /* Texte noir sur fond blanc */
+  }
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 20px;
+  background-color: #f9f6f3;
+  padding: 40px 20px;
+  color: #333;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 0.1em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.footer-center {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social-icons i {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #999;
+}
+

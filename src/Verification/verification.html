@@ -1,0 +1,26 @@
+<div id="age-verification-modal" class="modal">
+    <div class="modal-content">
+      <img src="https://www.ruinart.com/dw/image/v2/BGMK_PRD/on/demandware.static/-/Library-Sites-Ruinart-shared/default/dwa9a539b8/ruinart-logo.png" alt="Ruinart Logo" class="logo">
+      <p id="paragraphe">To visit our site, you must be old enough to drink alcohol according to legislation in your location of residence. If there is no legislation, you must be 21 years of age.</p>
+      
+      <form id="age-verification-form">
+        <label for="country">COUNTRY / REGION & DATE OF BIRTH</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Czech Republic</option>
+          <option value="Czech Republic">Czech Republic</option>
+          <option value="United States">United States</option>
+          <option value="France">France</option>
+          <!-- Ajoutez d'autres pays ici -->
+        </select>
+  
+        <input type="number" id="year" name="year" placeholder="YEAR" min="1900" max="2023" required>
+        
+        <button type="submit" class="validate-button">VALIDATE</button>
+      </form>
+  
+      <p>By clicking on "validate", I accept the <a href="#">Terms of Service</a> and declare to have read the <a href="#">Information notice on the processing of personal data & cookies</a>.</p>
+      <p>Ruinart supports the moderate consumption of wine and spirits through Moët Hennessy, a member of <a href="#">Wine in Moderation</a>.</p>
+      <p class="footer-note">PLEASE DRINK RESPONSIBLY</p>
+    </div>
+  </div>
+  

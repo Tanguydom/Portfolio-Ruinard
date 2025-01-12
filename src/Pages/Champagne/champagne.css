@@ -1,0 +1,129 @@
+ /* Reset all elements' margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-container {
+    position: relative;
+    background-image: url('https://www.ruinart.com/dw/image/v2/BGMK_PRD/on/demandware.static/-/Library-Sites-Ruinart-shared/default/dw373be9fe/images/Tous-nos-champagnes/200728ED_RU06-Retouche-C.jpg?im=Resize,width=768');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ajustez selon vos besoins */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Couche sombre semi-transparente */
+    z-index: 1; /* Place la superposition derrière le contenu */
+  }
+  
+  .centered-content {
+    position: relative;
+    z-index: 2; /* Assure que le contenu est au-dessus de la superposition sombre */
+  }
+
+/* Centered content for background section */
+.centered-content {
+    text-align: center;
+    max-width: 750px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    transform: translateY(-20px); /* Déplace vers le haut de 20px */
+}
+
+.centered-content2 {
+    text-align: center;
+    padding: 100px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+}
+
+.centered-title {
+    font-family: "Saol Standard - Regular", arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.centered-subtitle {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.champagne-table {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Espacement vertical entre les rangées */
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.champagne-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Espacement horizontal entre les colonnes */
+}
+
+.champagne-item {
+    flex: 1;
+    text-align: center; /* Centre les textes */
+}
+
+.champagne-item img {
+    width: 120%;
+    max-width: 350px; /* Ajuste la taille des images */
+    height: auto;
+    margin: 0 auto 15px auto; /* Centre l'image horizontalement */
+}
+
+.champagne-item h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.champagne-item p {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center; /* Centre le Discover */
+    align-items: center;
+}
+
+.champagne-item p a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.champagne-item p a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 30px;
+    margin: 10px auto; /* Centre la ligne horizontalement */
+    border: 1px solid #000; /* Assure un style visible pour la ligne */
+}
+
+/* Espacement supplémentaire pour les images */
+.champagne-item {
+    padding-bottom: 20px; /* Espacement sous chaque item */
+}
+

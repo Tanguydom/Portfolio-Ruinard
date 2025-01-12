@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruinart</title>
+  <!-- Importation du fichier CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-header">
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <img
+          src="src/assets/images/barre-de-menu.png" 
+          alt="Menu Icon" 
+          class="menu-icon"
+        />
+      </div>
+  
+      <!-- Logo Ruinart centré -->
+      <div class="navbar-logo-center">
+        <a href="#" class="navbar-logo-center" data-component="home">
+          <img
+            src="https://www.ruinart.com/on/demandware.static/-/Library-Sites-Ruinart-shared/default/dw03fd216e/ruinart-logo-v1.svg"
+            alt="Ruinart Logo"
+            class="navbar__logo"
+          />
+        </a>
+      </div>
+    </div>
+  
+    <!-- Menu de navigation -->
+    <ul class="navbar-menu-container">
+      <li class="nav-item">
+        <a href="#" class="nav-link" data-component="champagne">Champagnes</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" data-component="visit">Visit Ruinart</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" data-component="themaison">The Maison</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" data-component="commitments">Commitments</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" data-component="art">Art</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- Conteneur pour le contenu -->
+  <main id="content"></main>
+
+  <footer class="footer">
+    <div class="footer-center">
+      <img alt="Ruinart"
+           src="https://www.ruinart.com/on/demandware.static/-/Library-Sites-Ruinart-shared/default/dw50b2fa26/ruinart-logo-v2.svg"
+           title="Ruinart" class="footer-logo"/>
+    </div>
+  
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>EXPLORE RUINART.COM</h4>
+        <ul>
+          <li>Champagnes</li>
+          <li>Reservations</li>
+          <li>La Maison</li>
+          <li>Commitments</li>
+          <li>Art</li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>ONLINE SERVICES</h4>
+        <ul>
+          <li>Contact us</li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>LEGAL TERMS</h4>
+        <ul>
+          <li>Terms and Conditions</li>
+          <li>Personal data & cookies</li>
+          <li>Cookie settings</li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>INFORMATIONS</h4>
+        <ul>
+          <li>Press corner</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+      <p>PLEASE DRINK RESPONSIBLY <br> BY STUDENT TANGUY DOMERGUE</p>
+    </div>
+  </footer>
+
+  <script src="navigation.js"></script>
+</body>
+</html>

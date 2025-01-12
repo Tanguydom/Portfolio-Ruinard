@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner Container */
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between banners */
+}
+
+/* Individual Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url('/src/assets/images/firstPicture.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Ajustez l'opacité pour l'assombrissement */
+  z-index: 1; /* Place la superposition derrière le contenu */
+}
+
+/* Banner Content */
+.banner-content {
+  position: relative;
+  z-index: 2; /* Met le contenu au-dessus de la superposition sombre */
+  color: white; /* Assurez-vous que le texte reste lisible */
+  text-align: center;
+}
+
+/* Title Styling */
+.banner-title {
+  font-size: 4rem; /* Large title */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Subtitle Styling */
+.banner-subtitle {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Button Styling */
+.banner-button {
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px;
+  padding: 10px 40px;
+  font-size: 14px;
+  color: black; 
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #d0cbcb; /* Hover effect */
+}
+
+/* Link Wrapper */
+.banner-link {
+  text-decoration: none;
+}
